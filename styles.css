@@ -40,7 +40,7 @@ main { opacity: 0; transition: opacity .8s .25s; }
 main.active { opacity: 1; }
 .section { position: relative; min-height: 100vh; padding: clamp(80px, 10vw, 130px) max(24px, calc((100vw - 1080px) / 2)); overflow: hidden; }
 .cream { background: var(--cream); }
-.hero { display: grid; place-items: center; text-align: center; color: white; background: url('https://the.invisimple.id/wp-content/uploads/jet-form-builder/a59bc803cbe931b0dd20f15f0e34b62f/2026/05/cropped_image_1779443911197.jpg') center 34%/cover no-repeat; }
+.hero { display: grid; place-items: center; text-align: center; color: white; background: url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2400&q=90') center 48%/cover no-repeat; }
 .hero-shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(22,27,20,.3), rgba(22,27,20,.74)); }
 .hero-content { position: relative; z-index: 1; }
 .light { color: white; }
@@ -66,9 +66,11 @@ blockquote { max-width: 760px; margin: 0; font-family: "Cormorant Garamond", ser
 .section-heading > p:last-child { max-width: 620px; margin-inline: auto; font-size: .88rem; }
 .couple-grid { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 30px; max-width: 950px; margin: auto; }
 .person-card { text-align: center; }
-.portrait { width: min(100%, 320px); aspect-ratio: 4/5; margin: auto; border-radius: 48% 48% 8px 8px; box-shadow: var(--shadow); background-image: url('https://the.invisimple.id/wp-content/uploads/jet-form-builder/a59bc803cbe931b0dd20f15f0e34b62f/2026/05/cropped_image_1779443911197.jpg'); background-size: 205%; }
-.portrait.bride { background-position: 28% 35%; }
-.portrait.groom { background-position: 78% 35%; }
+.portrait { position: relative; display: grid; place-items: center; width: min(100%, 320px); aspect-ratio: 4/5; margin: auto; overflow: hidden; border: 1px solid rgba(87,103,78,.25); border-radius: 48% 48% 8px 8px; box-shadow: var(--shadow); background: radial-gradient(circle at 50% 35%, rgba(255,255,255,.74), transparent 28%), linear-gradient(145deg, #d7dece, #87947e); }
+.portrait::before, .portrait::after { content: ""; position: absolute; width: 80%; aspect-ratio: 1; border: 1px solid rgba(255,255,255,.32); border-radius: 50%; }
+.portrait::after { width: 105%; }
+.portrait.groom { background: radial-gradient(circle at 50% 35%, rgba(255,255,255,.68), transparent 28%), linear-gradient(145deg, #d8cfbf, #8f806d); }
+.portrait span { position: relative; z-index: 1; color: rgba(255,255,255,.88); font-family: Italiana, serif; font-size: 7rem; text-shadow: 0 6px 25px rgba(45,54,42,.15); }
 .script-name { margin: 24px 0 0; color: var(--gold); font-family: "Cormorant Garamond", serif; font-size: 2.6rem; font-style: italic; line-height: 1; }
 .person-card h3 { margin: 10px 0; font-family: "Cormorant Garamond", serif; font-size: 1.35rem; }
 .person-card p:last-child { margin: 0; font-size: .78rem; }

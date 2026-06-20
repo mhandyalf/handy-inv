@@ -1,6 +1,6 @@
 # Handy Invitation
 
-Undangan pernikahan statis yang responsif, terinspirasi dari tampilan Invisimple.
+Undangan pernikahan Arum & Handy yang responsif, terinspirasi dari tampilan Invisimple.
 
 ## Menjalankan lokal
 
@@ -13,5 +13,5 @@ Buka `http://localhost:8080/?to=Handy`. Nama tamu dapat diganti lewat parameter 
 ## Catatan
 
 - Ucapan tersimpan lokal di browser (`localStorage`), bukan di server.
-- Musik dan beberapa gambar masih memakai URL publik situs referensi.
+- Musik masih memakai URL publik situs referensi, sedangkan latar hero memakai foto resolusi tinggi dari Unsplash.
 - Semua teks acara dapat diubah langsung di `index.html`.
