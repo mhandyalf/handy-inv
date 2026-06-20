@@ -133,7 +133,7 @@ blockquote { max-width: 760px; margin: 0; font-family: "Cormorant Garamond", ser
 
 @media (max-width: 760px) {
   .section { min-height: auto; padding-block: 85px; }
-  .hero { min-height: 100svh; }
+  .hero { min-height: 100svh; background-position: 52% center; }
   .countdown div { min-width: 58px; }
   .couple-grid { grid-template-columns: 1fr; }
   .ampersand { margin: -10px 0; }
